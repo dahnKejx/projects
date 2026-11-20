@@ -1,0 +1,113 @@
+from turtle import *
+import time
+
+def main():
+    bgcolor('black')
+    shape('turtle')
+    pencolor('white')
+    speed(5)
+    # x axis
+    setposition(250,0)
+    setposition(-250,0)
+    penup()
+    # y axis
+    setposition(0,250)
+    pendown()
+    setposition(0,-250)
+    penup()
+    # updown axis
+    setposition(175,175)
+    pendown()
+    setposition(-175,-175)
+    penup()
+    # downup axis
+    setposition(-175,175)
+    pendown()
+    setposition(175,-175)
+    penup()
+    
+    setposition(0,250)
+    pendown()
+    goto(50,50)
+    goto(250,0)
+    goto(50,-50)
+    goto(0,-250)
+    goto(-50,-50)
+    setposition(-250,0)
+    setposition(-50,50)
+    setposition(0,250)
+    penup()
+    setposition(50,100)
+    pendown()
+    setposition(175,175)
+    setposition(100,50)
+    penup()
+    setposition(100,-50)
+    pendown()
+    setposition(175,-175)
+    setposition(50,-100)
+    penup()
+    setposition(-50,-100)
+    pendown()
+    setposition(-175,-175)
+    goto(-100,-50)
+    penup()
+    setposition(-100,50)
+    pendown()
+    setposition(-175,175)
+    goto(-50,100)
+    penup()
+    
+    
+    setposition(0,250)
+    pendown()
+    fillcolor('white')
+    begin_fill()
+    goto(50,50)
+    goto(0,0)
+    goto(0,250)
+    end_fill()
+    penup()
+    
+    setposition(250,0)
+    pendown()
+    fillcolor('white')
+    begin_fill()
+    goto(50,-50)
+    goto(0,0)
+    goto(250,0)
+    end_fill()
+    penup()
+    
+    setposition(0,-250)
+    pendown()
+    fillcolor('white')
+    begin_fill()
+    goto(-50,-50)
+    goto(0,0)
+    goto(0,-250)
+    end_fill()
+    penup()
+    
+    setposition(-250,0)
+    pendown()
+    fillcolor('white')
+    begin_fill()
+    goto(-50,50)
+    goto(0,0)
+    goto(-250,0)
+    end_fill()
+    penup()
+    
+    
+    setposition(0,-250)
+    pencolor('red')
+    pendown()
+    circle(250)
+    
+    
+    
+    time.sleep(5)
+    
+main()
+    
